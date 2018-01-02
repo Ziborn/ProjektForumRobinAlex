@@ -46,3 +46,15 @@ $(document).ready(function () {
             $("#allPosts").text(xhr.responseText);
         });
 });
+
+function GetPosts(post) {
+
+    var html = '<tr>';
+    html += '<td class="title">' + post.title + '</td>';
+    html += '<td class="Post">' + post.postText + '</td>';
+
+    html += '</tr>';
+
+    console.log(html);
+    return html;
+}

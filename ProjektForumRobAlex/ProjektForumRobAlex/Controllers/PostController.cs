@@ -26,7 +26,7 @@ namespace ForumProjekt.Controllers
             databaseContext.Add(post);
             databaseContext.SaveChanges();
 
-            return Ok(post.Id);
+            return Ok();
         }
 
         [HttpGet]

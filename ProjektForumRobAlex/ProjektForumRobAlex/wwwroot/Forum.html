@@ -7,30 +7,25 @@
 <body>
     <form asp-action="Create">
         <div id="addForm">
-
             <label>Title</label>
             <input name="Title" />
             <label>Post</label>
             <input name="PostText" />
-
             <button>Add</button>
         </div>
     </form>
-
     <table class="table table-bordered">
         <thead>
             <tr>
                 <th>Title</th>
+                <th>Post</th>
             </tr>
         </thead>
         <tbody id="allPosts"></tbody>
     </table>
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
-
     <script src="js/main.js"></script>
-
 </body>
 </html>
