@@ -34,5 +34,21 @@ namespace ForumProjekt.Controllers
         {
             return Ok(databaseContext.Posts);
         }
+
+        [HttpGet, Route("test")]
+        public IActionResult GetPost(int id)
+        {
+            var x = databaseContext.Posts.SingleOrDefault(p => p.Id == id);
+            return Ok(x);
+        }
+
+        [HttpDelete]
+        public IActionResult DeleteCustomer(Post post)
+        {
+            databaseContext.Remove(post);
+            databaseContext.SaveChanges();
+            return Ok(post.Id);
+        }
+
     }
 }
