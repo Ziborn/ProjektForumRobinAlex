@@ -111,7 +111,14 @@ function GetPost(post) {
 =======
     html += '<td class="Post">' + post.postText + '</td>';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+    
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> master
+=======
 =======
     
 >>>>>>> Stashed changes

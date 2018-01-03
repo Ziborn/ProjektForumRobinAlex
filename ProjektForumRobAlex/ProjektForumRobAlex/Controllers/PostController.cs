@@ -19,7 +19,7 @@ namespace ForumProjekt.Controllers
             this.databaseContext = databaseContext;
             databaseContext.Database.EnsureCreated();
         }
-        
+
         [HttpPost]
         public IActionResult Add(Post post)
         {
