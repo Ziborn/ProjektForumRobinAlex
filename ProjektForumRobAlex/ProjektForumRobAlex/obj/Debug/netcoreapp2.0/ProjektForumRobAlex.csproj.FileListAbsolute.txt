@@ -20,3 +20,14 @@ C:\Users\Alexander Holmberg\Desktop\ProjektArbeteAlpha\ProjektForumRobinAlex\Pro
 C:\Users\Alexander Holmberg\Desktop\ProjektArbeteAlpha\ProjektForumRobinAlex\ProjektForumRobAlex\ProjektForumRobAlex\obj\Debug\netcoreapp2.0\ProjektForumRobAlex.AssemblyInfo.cs
 C:\Users\Alexander Holmberg\Desktop\ProjektArbeteAlpha\ProjektForumRobinAlex\ProjektForumRobAlex\ProjektForumRobAlex\obj\Debug\netcoreapp2.0\ProjektForumRobAlex.dll
 C:\Users\Alexander Holmberg\Desktop\ProjektArbeteAlpha\ProjektForumRobinAlex\ProjektForumRobAlex\ProjektForumRobAlex\obj\Debug\netcoreapp2.0\ProjektForumRobAlex.pdb
+D:\Avancerad Webb asp.net\ProjektForumRobinAlex\ProjektForumRobAlex\ProjektForumRobAlex\bin\Debug\netcoreapp2.0\ProjektForumRobAlex.deps.json
+D:\Avancerad Webb asp.net\ProjektForumRobinAlex\ProjektForumRobAlex\ProjektForumRobAlex\bin\Debug\netcoreapp2.0\ProjektForumRobAlex.runtimeconfig.json
+D:\Avancerad Webb asp.net\ProjektForumRobinAlex\ProjektForumRobAlex\ProjektForumRobAlex\bin\Debug\netcoreapp2.0\ProjektForumRobAlex.runtimeconfig.dev.json
+D:\Avancerad Webb asp.net\ProjektForumRobinAlex\ProjektForumRobAlex\ProjektForumRobAlex\bin\Debug\netcoreapp2.0\ProjektForumRobAlex.dll
+D:\Avancerad Webb asp.net\ProjektForumRobinAlex\ProjektForumRobAlex\ProjektForumRobAlex\bin\Debug\netcoreapp2.0\ProjektForumRobAlex.pdb
+D:\Avancerad Webb asp.net\ProjektForumRobinAlex\ProjektForumRobAlex\ProjektForumRobAlex\obj\Debug\netcoreapp2.0\ProjektForumRobAlex.csprojResolveAssemblyReference.cache
+D:\Avancerad Webb asp.net\ProjektForumRobinAlex\ProjektForumRobAlex\ProjektForumRobAlex\obj\Debug\netcoreapp2.0\ProjektForumRobAlex.csproj.CoreCompileInputs.cache
+D:\Avancerad Webb asp.net\ProjektForumRobinAlex\ProjektForumRobAlex\ProjektForumRobAlex\obj\Debug\netcoreapp2.0\ProjektForumRobAlex.AssemblyInfoInputs.cache
+D:\Avancerad Webb asp.net\ProjektForumRobinAlex\ProjektForumRobAlex\ProjektForumRobAlex\obj\Debug\netcoreapp2.0\ProjektForumRobAlex.AssemblyInfo.cs
+D:\Avancerad Webb asp.net\ProjektForumRobinAlex\ProjektForumRobAlex\ProjektForumRobAlex\obj\Debug\netcoreapp2.0\ProjektForumRobAlex.dll
+D:\Avancerad Webb asp.net\ProjektForumRobinAlex\ProjektForumRobAlex\ProjektForumRobAlex\obj\Debug\netcoreapp2.0\ProjektForumRobAlex.pdb
