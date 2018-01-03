@@ -49,6 +49,7 @@ function GetPosts(post) {
 
     var html = '<tr>';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     html += '<th class="postId" hidden>' + post.id + '</th>';
     html += '<td class="title">' + post.title + '</td>';
 <<<<<<< HEAD
@@ -128,6 +129,11 @@ function GetPost(post) {
 >>>>>>> Stashed changes
 >>>>>>> master
 >>>>>>> master
+=======
+    html += '<td class="title">' + post.title + '</td>';
+    html += '<td class="Post">' + post.postText + '</td>';
+    
+>>>>>>> Stashed changes
 =======
     html += '<td class="title">' + post.title + '</td>';
     html += '<td class="Post">' + post.postText + '</td>';
