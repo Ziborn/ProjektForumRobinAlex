@@ -53,7 +53,11 @@ function GetPosts(post) {
     html += '<td class="title">' + post.title + '</td>';
     html += '<td class="Post">' + post.postText + '</td>';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+    
+>>>>>>> Stashed changes
 =======
     
 >>>>>>> Stashed changes
