@@ -50,9 +50,7 @@ function GetPosts(post) {
     var html = '<tr>';
     html += '<th class="postId" hidden>' + post.id + '</th>';
     html += '<td class="title">' + post.title + '</td>';
-<<<<<<< HEAD
     html += '<th><button id="showPost">Show</button></th>';
-    //html += '<td class="Post">' + post.postText + '</td>';
     html += '<th><button id="removePost">Remove</button></th>';
     html += '</tr>';
 
@@ -108,21 +106,7 @@ function GetPost(post) {
     html += '<td class="title">' + post.title + '</td>';
     html += '<td class="Post">' + post.postText + '</td>';
     html += '<td> <p> kööööööörv </p></td>';
-=======
     html += '<td class="Post">' + post.postText + '</td>';
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-=======
-    
->>>>>>> Stashed changes
-<<<<<<< HEAD
->>>>>>> master
-=======
-=======
-    
->>>>>>> Stashed changes
->>>>>>> master
     html += '</tr>';
 
     console.log(html);
