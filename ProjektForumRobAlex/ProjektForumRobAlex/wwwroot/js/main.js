@@ -52,7 +52,11 @@ function GetPosts(post) {
     var html = '<tr>';
     html += '<td class="title">' + post.title + '</td>';
     html += '<td class="Post">' + post.postText + '</td>';
+<<<<<<< Updated upstream
 
+=======
+    
+>>>>>>> Stashed changes
     html += '</tr>';
 
     console.log(html);
