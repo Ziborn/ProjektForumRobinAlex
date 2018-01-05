@@ -13116,8 +13116,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alexander Holmberg\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\Anders\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13126,20 +13125,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alexander Holmberg\\Desktop\\ProjektArbeteAlpha\\ProjektForumRobinAlex\\ProjektForumRobAlex\\ProjektForumRobAlex\\ProjektForumRobAlex.csproj",
+      "projectUniqueName": "D:\\Avancerad Webb asp.net\\ProjektForumRobinAlex\\ProjektForumRobAlex\\ProjektForumRobAlex\\ProjektForumRobAlex.csproj",
       "projectName": "ProjektForumRobAlex",
-      "projectPath": "C:\\Users\\Alexander Holmberg\\Desktop\\ProjektArbeteAlpha\\ProjektForumRobinAlex\\ProjektForumRobAlex\\ProjektForumRobAlex\\ProjektForumRobAlex.csproj",
-      "packagesPath": "C:\\Users\\Alexander Holmberg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alexander Holmberg\\Desktop\\ProjektArbeteAlpha\\ProjektForumRobinAlex\\ProjektForumRobAlex\\ProjektForumRobAlex\\obj\\",
+      "projectPath": "D:\\Avancerad Webb asp.net\\ProjektForumRobinAlex\\ProjektForumRobAlex\\ProjektForumRobAlex\\ProjektForumRobAlex.csproj",
+      "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
+      "outputPath": "D:\\Avancerad Webb asp.net\\ProjektForumRobinAlex\\ProjektForumRobAlex\\ProjektForumRobAlex\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alexander Holmberg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -13162,18 +13159,18 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.All": {
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "[2.0.3, )"
+            "version": "2.0.0"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "[2.0.0, )",
+            "version": "2.0",
             "autoReferenced": true
           },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "2.0.3"
           }
         },
         "imports": [
