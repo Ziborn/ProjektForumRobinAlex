@@ -1,9 +1,6 @@
 ﻿$(document).ready(function () {
     ShowPosts();
 });
-
-$("#addForm button").click(function () {
-
 $("#addForm button").click(function () {
     $.ajax({
         url: '/api/posts/',
@@ -20,39 +17,6 @@ $("#addForm button").click(function () {
         .fail(function (xhr, status, error) {
             alert(`Fail at posting!`);
             console.log("Error", xhr, status, error);
-        });
-});
-
-$(document).on("click", "#removePost", function () {
-    var id = $(this).parent().siblings(".postId").text();
-    console.log(id);
-    $.ajax({
-        url: '/api/posts/',
-        method: 'DELETE',
-        data: {
-            id: id
-        }
-
-    })
-        .done(function (result) {
-            console.log("Success in deleting!", result);
-            ShowPosts();
-        })
-        .fail(function (xhr, status, error) {
-            console.log("Error in deleting!", xhr, status, error);
-        });
-});
-
-$(document).on("click", "#showPost", function () {
-    var id = $(this).parent().siblings(".postId").text();
-    HidePosts();
-    console.log(id);
-    $.ajax({
-        url: 'api/posts/showSinglepost',
-        method: 'GET',
-        data: { id: id }
-    })
-        .done(function (result) {
         });
 });
 $(document).on("click", "#removePost", function () {
@@ -93,7 +57,6 @@ $(document).on("click", "#showPost", function () {
             $("#findPost").text(xhr.responseText);
         });
 });
-
 $(document).on("click", "#editPost", function () {
     var id = $(this).parent().siblings(".postId").text();
     var row = $(this).parent().parent();
@@ -114,7 +77,6 @@ $(document).on("click", "#editPost", function () {
             console.log("Error", xhr, status, error);
         });
 });
-
 $(document).on("click", "#showEdit", function () {
     var id = $(this).parent().siblings(".postId").text();
     HidePosts();
@@ -135,7 +97,6 @@ $(document).on("click", "#showEdit", function () {
             $("#findPost").text(xhr.responseText);
         });
 });
-
 function ShowPosts() {
     $.ajax({
         url: 'api/posts/',
@@ -148,10 +109,6 @@ function ShowPosts() {
                 html += GetPosts(item);
             });
             $("#allPosts").html(html);
-
-        })
-        .fail(function (xhr, status, error) {
-
         })
         .fail(function (xhr, status, error) {
             alert(error);
@@ -159,9 +116,6 @@ function ShowPosts() {
             $("#allPosts").text(xhr.responseText);
         });
 }
-
-function GetPosts(post) {
-
 function GetPosts(post) {
     var html = '<tr>';
     html += '<th class="postId" hidden>' + post.id + '</th>';
@@ -169,11 +123,6 @@ function GetPosts(post) {
     html += '<th><button id="showPost">Show</button></th>';
     html += '<th><button id="removePost">Remove</button></th>';
     html += '</tr>';
-
-    console.log(html);
-    return html;
-}
-
     console.log(html);
     return html;
 }
@@ -185,28 +134,9 @@ function GetPost(post) {
     html += '<th><button id="showEdit">Edit</button></th>';
     html += '<td> <button id="show">Go back</button></td>';
     html += '</tr>';
-
     console.log(html);
     return html;
 }
-
-function GetEdit(post) {
-
-    var html = '<tr>';
-    html += '<th class="postId" hidden>' + post.id + '</th>';
-    html += '<td class="Title" contenteditable="true">' + post.title + '</td>';
-    html += '<td class="Post" contenteditable="true">' + post.postText + '</td>';
-    html += '<th><button id="editPost">Save Changes</button></th>';
-    html += '<td> <button id="show">Go back</button></td>';
-    html += '</tr>';
-    console.log(html);
-    return html;
-}
-
-function HidePosts() {
-    $("#hidePosts").hide();
-}
-
 function GetEdit(post) {
     var html = '<tr>';
     html += '<th class="postId" hidden>' + post.id + '</th>';
