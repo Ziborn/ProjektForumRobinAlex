@@ -26,7 +26,7 @@ namespace ForumProjekt.Controllers
             databaseContext.Add(post);
             databaseContext.SaveChanges();
 
-            return Ok();
+            return Ok(post.Title);
         }
 
         [HttpGet]
@@ -35,7 +35,7 @@ namespace ForumProjekt.Controllers
             return Ok(databaseContext.Posts);
         }
 
-        [HttpGet, Route("test")]
+        [HttpGet, Route("showSinglepost")]
         public IActionResult GetPost(int id)
         {
             var x = databaseContext.Posts.SingleOrDefault(p => p.Id == id);
@@ -43,9 +43,17 @@ namespace ForumProjekt.Controllers
         }
 
         [HttpDelete]
-        public IActionResult DeleteCustomer(Post post)
+        public IActionResult DeletePost(Post post)
         {
             databaseContext.Remove(post);
+            databaseContext.SaveChanges();
+            return Ok(post.Id);
+        }
+
+        [HttpPut]
+        public IActionResult UpdatePost(Post post)
+        {
+            databaseContext.Update(post);
             databaseContext.SaveChanges();
             return Ok(post.Id);
         }

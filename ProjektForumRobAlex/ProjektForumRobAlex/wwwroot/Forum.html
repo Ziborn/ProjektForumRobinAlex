@@ -9,7 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form asp-action="Create">
+
         <div id="addForm">
             <label>Title</label>
             <input name="Title" />
@@ -17,18 +17,19 @@
             <input name="PostText" />
             <button>Add</button>
         </div>
-    </form>
 
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Read post</th>
-                <th>Delete Post</th>
-            </tr>
-        </thead>
-        <tbody id="allPosts"></tbody>
-    </table>
+        <div id="hidePosts">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Read post</th>
+                        <th>Delete Post</th>
+                    </tr>
+                </thead>
+                <tbody id="allPosts"></tbody>
+            </table>
+        </div>
 
     <table class="table table-bordered">
         <thead>

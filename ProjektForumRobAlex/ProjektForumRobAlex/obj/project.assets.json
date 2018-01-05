@@ -13116,7 +13116,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Anders\\.nuget\\packages\\": {},
+    "C:\\Users\\Alexander Holmberg\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13125,18 +13126,20 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Avancerad Webb asp.net\\ProjektForumRobinAlex\\ProjektForumRobAlex\\ProjektForumRobAlex\\ProjektForumRobAlex.csproj",
+      "projectUniqueName": "C:\\Users\\Alexander Holmberg\\Desktop\\ProjektArbeteAlpha\\ProjektForumRobinAlex\\ProjektForumRobAlex\\ProjektForumRobAlex\\ProjektForumRobAlex.csproj",
       "projectName": "ProjektForumRobAlex",
-      "projectPath": "D:\\Avancerad Webb asp.net\\ProjektForumRobinAlex\\ProjektForumRobAlex\\ProjektForumRobAlex\\ProjektForumRobAlex.csproj",
-      "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
-      "outputPath": "D:\\Avancerad Webb asp.net\\ProjektForumRobinAlex\\ProjektForumRobAlex\\ProjektForumRobAlex\\obj\\",
+      "projectPath": "C:\\Users\\Alexander Holmberg\\Desktop\\ProjektArbeteAlpha\\ProjektForumRobinAlex\\ProjektForumRobAlex\\ProjektForumRobAlex\\ProjektForumRobAlex.csproj",
+      "packagesPath": "C:\\Users\\Alexander Holmberg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alexander Holmberg\\Desktop\\ProjektArbeteAlpha\\ProjektForumRobinAlex\\ProjektForumRobAlex\\ProjektForumRobAlex\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Alexander Holmberg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -13159,18 +13162,18 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.3, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           },
-          "Microsoft.AspNetCore.All": {
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "2.0.3"
+            "version": "[2.0.0, )"
           }
         },
         "imports": [
