@@ -11,8 +11,8 @@ using System;
 namespace ProjektForumRobAlex.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20180102094857_first")]
-    partial class first
+    [Migration("20180105094455_Comments")]
+    partial class Comments
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -33,6 +33,30 @@ namespace ProjektForumRobAlex.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Posts");
+                });
+
+            modelBuilder.Entity("ProjektForumRobAlex.Entities.Comment", b =>
+                {
+                    b.Property<int>("CommentId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("CommentText");
+
+                    b.Property<int>("PostForeignKey");
+
+                    b.HasKey("CommentId");
+
+                    b.HasIndex("PostForeignKey");
+
+                    b.ToTable("Comments");
+                });
+
+            modelBuilder.Entity("ProjektForumRobAlex.Entities.Comment", b =>
+                {
+                    b.HasOne("ForumProjekt.Entities.Post", "Post")
+                        .WithMany("Comments")
+                        .HasForeignKey("PostForeignKey")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

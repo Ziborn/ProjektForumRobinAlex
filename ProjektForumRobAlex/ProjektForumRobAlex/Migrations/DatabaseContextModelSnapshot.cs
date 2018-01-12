@@ -33,6 +33,30 @@ namespace ProjektForumRobAlex.Migrations
 
                     b.ToTable("Posts");
                 });
+
+            modelBuilder.Entity("ProjektForumRobAlex.Entities.Comment", b =>
+                {
+                    b.Property<int>("CommentId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("CommentText");
+
+                    b.Property<int>("PostForeignKey");
+
+                    b.HasKey("CommentId");
+
+                    b.HasIndex("PostForeignKey");
+
+                    b.ToTable("Comments");
+                });
+
+            modelBuilder.Entity("ProjektForumRobAlex.Entities.Comment", b =>
+                {
+                    b.HasOne("ForumProjekt.Entities.Post", "Post")
+                        .WithMany("Comments")
+                        .HasForeignKey("PostForeignKey")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
 #pragma warning restore 612, 618
         }
     }

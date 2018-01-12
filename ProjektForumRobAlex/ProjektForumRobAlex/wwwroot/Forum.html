@@ -7,37 +7,64 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <div id="addForm">
-        <label>Title</label>
-        <input name="Title" />
-        <label>Post</label>
-        <input name="PostText" />
-        <button>Add</button>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand homeHideShow" href="#">Cats and Shit</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link homeHideShow" href="#">Home</a>
+                <a class="nav-item nav-link showAddForm" href="#">Create post</a>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div id="addFormToogle">
+                <div id="addForm">
+                    <form>
+                        <div class="marginTop"></div>
+                        <div class="form-group">
+                            <label><b>Title</b></label><br />
+                            <input name="Title" /><br /><br />
+                            <label><b>Subject</b></label><br />
+                            <textarea class="form-control" rows="5" name="PostText"></textarea>
+                            <button>Post</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="allPostsToggle" class="marginTop1">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th><h4>Title</h4></th>
+                        </tr>
+                    </thead>
+                    <tbody id="allPosts"></tbody>
+                </table>
+            </div>
+            <div id="singlePostToggle" class="marginTop1">
+                <table class="table table-bordered">
+                    <tbody id="findPost"></tbody>
+                    <tbody id="findComments"></tbody>
+                </table>
+                <div id="addComment">
+                    <form>
+                        <label><b>Comment</b></label><br />
+                        <textarea class="form-control" rows="5" name="CommentText"></textarea>
+                        <button>Add comment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
     </div>
-    <div id="hidePosts">
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Read post</th>
-                    <th>Delete Post</th>
-                </tr>
-            </thead>
-            <tbody id="allPosts"></tbody>
-        </table>
-    </div>
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Subject</th>
-            </tr>
-        </thead>
-        <tbody id="findPost"></tbody>
-    </table>
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
